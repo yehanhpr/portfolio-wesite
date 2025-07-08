@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falling Star Name Effect</title>
+    <style>
+        body {
+            background-color: #121212; /* Dark background for contrast */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        #glowing-name {
+            font-size: 4rem;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.2); /* Base dim color */
+            letter-spacing: 2px;
+        }
+
+        #glowing-name span {
+            display: inline-block;
+            transition: all 0.4s ease;
+        }
+
+        #glowing-name span.active {
+            color: #11e161;
+            text-shadow: 
+                0 0 10px #03394b,
+                0 0 20px #4A6FA5,
+                0 0 30px #0000FF;
+            animation: float 0.6s ease-out;
+            transform: translateY(0);
+        }
+
+        @keyframes float {
+            0% { 
+                transform: translateY(-30px); 
+                opacity: 0; 
+            }
+            100% { 
+                transform: translateY(0); 
+                opacity: 1; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 id="glowing-name">
+        <span>R</span>
+        <span>a</span>
+        <span>v</span>
+        <span>i</span>
+        <span>n</span>
+        <span>d</span>
+        <span>u</span>
+        <span> </span>
+        <span>Y</span>
+        <span>e</span>
+        <span>h</span>
+        <span>a</span>
+        <span>n</span>
+    </h1>
+
+    <script>
+        const nameElement = document.getElementById('glowing-name');
+        const letters = nameElement.querySelectorAll('span');
+        let currentIndex = 0;
+
+        function animateLetter() {
+            // Reset all letters
+            letters.forEach(letter => {
+                letter.classList.remove('active');
+            });
+
+            // Activate current letter
+            letters[currentIndex].classList.add('active');
+
+            // Move to next letter (loop to start after last)
+            currentIndex = (currentIndex + 1) % letters.length;
+        }
+
+        // Start animation (300ms per letter)
+        setInterval(animateLetter, 300);
+
+        // Initialize first letter
+        animateLetter();
+    </script>
+</body>
+</html>
