@@ -20,6 +20,10 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
+        html{
+            scroll-behavior: smooth;
+        }
+
         body {
             background: var(--bg-gradient);
             color: var(--text-primary);
@@ -453,6 +457,9 @@
             color: #bcdec0;
             font-size: 0.9rem;
         }
+
+
+        
 
         /* Footer Section */
         footer {
