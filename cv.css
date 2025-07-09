@@ -1,0 +1,142 @@
+/* Add to home.css */
+.cv-section {
+  padding: 80px 10%;
+  color: var(--text-primary);
+}
+
+.cv-container {
+  background: var(--bg-card);
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.cv-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(100, 255, 218, 0.3);
+}
+
+.cv-title h1 {
+  font-size: 2.5rem;
+  color: var(--text-primary);
+  margin-bottom: 5px;
+}
+
+.cv-title h2 {
+  font-size: 1.3rem;
+  color: var(--text-accent);
+  font-weight: normal;
+}
+
+.cv-contact p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  color: #8892b0;
+}
+
+.cv-contact i {
+  color: var(--text-accent);
+  width: 20px;
+}
+
+.cv-main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+
+.cv-block {
+  margin-bottom: 30px;
+}
+
+.cv-block h3 {
+  font-size: 1.5rem;
+  color: var(--text-accent);
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(100, 255, 218, 0.2);
+}
+
+.cv-item {
+  margin-bottom: 20px;
+}
+
+.cv-item h4 {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-bottom: 5px;
+}
+
+.cv-sub {
+  font-style: italic;
+  color: var(--text-accent);
+  margin-bottom: 5px;
+}
+
+.cv-item p, .cv-item ul {
+  color: #8892b0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.cv-item ul {
+  padding-left: 20px;
+}
+
+.cv-item li {
+  margin-bottom: 5px;
+}
+
+.skill-category {
+  margin-bottom: 15px;
+}
+
+.skill-category h4 {
+  font-size: 1rem;
+  color: var(--text-primary);
+  margin-bottom: 5px;
+}
+
+.skill-category p {
+  color: #8892b0;
+  font-size: 0.95rem;
+}
+
+.cv-download-section {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.cv-download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 25px;
+  background: var(--text-accent);
+  color: #0a192f;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.cv-download-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(100, 255, 218, 0.3);
+}
+
+@media (max-width: 768px) {
+  .cv-header {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .cv-main {
+    grid-template-columns: 1fr;
+  }
+}
