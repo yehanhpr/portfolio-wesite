@@ -1,0 +1,109 @@
+/* Add to home.css */
+.achievements-section {
+  padding: 80px 10%;
+  color: var(--text-primary);
+}
+
+.achievements-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--text-accent);
+}
+
+.achievements-section h2 span {
+  color: var(--text-primary);
+}
+
+.section-intro {
+  font-size: 1.1rem;
+  color: #8892b0;
+  margin-bottom: 40px;
+  max-width: 800px;
+  line-height: 1.8;
+}
+
+.achievement-tabs {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgba(100, 255, 218, 0.2);
+  padding-bottom: 10px;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  background: transparent;
+  border: none;
+  color: #8892b0;
+  font-size: 1rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.tab-btn::after {
+  content: '';
+  position: absolute;
+  bottom: -11px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--text-accent);
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+
+.tab-btn.active {
+  color: var(--text-accent);
+}
+
+.tab-btn.active::after {
+  transform: scaleX(1);
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.achievement-card {
+  display: flex;
+  gap: 20px;
+  background: var(--bg-card);
+  padding: 25px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(100, 255, 218, 0.1);
+}
+
+.achievement-icon {
+  font-size: 1.8rem;
+  color: var(--text-accent);
+  min-width: 50px;
+}
+
+.achievement-details h3 {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  color: var(--text-primary);
+}
+
+.year {
+  color: var(--text-accent);
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.description {
+  color: #8892b0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}

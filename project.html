@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Ravee Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="project.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img class="image" src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/about_me.gif?raw=true" height="50px" width=50px>
+      <div class="logo">Ravee<span>Portfolio</span></div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="skills.html">About Me</a></li>
+        <li><a href="education.html">Education & Skills</a></li>
+        <li><a href="Extra-Curricular.html">Extra-Curricular Activities</a></li>
+        <li><a href="Achievements.html">Achievements</a></li>
+        <li><a href="Projects.html" class="active">Projects</a></li>
+        <li><a href="CV.html">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="projects-main">
+    <h2>My <span>Projects</span></h2>
+    <p class="section-intro">Here's a collection of projects I've worked on, ranging from academic assignments to personal passion projects.</p>
+    
+    <div class="project-filters">
+      <button class="filter-btn active" data-filter="all">All Projects</button>
+      <button class="filter-btn" data-filter="web">Web Development</button>
+      <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+      <button class="filter-btn" data-filter="ai">AI/ML</button>
+      <button class="filter-btn" data-filter="other">Other</button>
+    </div>
+    
+    <div class="projects-grid">
+      <div class="project-card" data-category="web">
+        <div class="project-image">
+          <img src="https://via.placeholder.com/400x250" alt="E-Commerce Platform">
+        </div>
+        <div class="project-info">
+          <h3>E-Commerce Platform</h3>
+          <p class="project-desc">A full stack e-commerce solution with user authentication and payment processing.</p>
+          <div class="project-tech">
+            <span>React</span>
+            <span>Node.js</span>
+            <span>MySQL</span>
+          </div>
+          <div class="project-links">
+            <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a href="#"><i class="fab fa-github"></i> Source Code</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="project-card" data-category="web">
+        <div class="project-image">
+          <img src="https://via.placeholder.com/400x250" alt="Weather App">
+        </div>
+        <div class="project-info">
+          <h3>Weather App</h3>
+          <p class="project-desc">A responsive weather application with real-time updates and location tracking.</p>
+          <div class="project-tech">
+            <span>JavaScript</span>
+            <span>API</span>
+            <span>CSS</span>
+          </div>
+          <div class="project-links">
+            <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a href="#"><i class="fab fa-github"></i> Source Code</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="project-card" data-category="mobile">
+        <div class="project-image">
+          <img src="https://via.placeholder.com/400x250" alt="Fitness Tracker">
+        </div>
+        <div class="project-info">
+          <h3>Fitness Tracker App</h3>
+          <p class="project-desc">Mobile application for tracking workouts, nutrition, and health metrics.</p>
+          <div class="project-tech">
+            <span>React Native</span>
+            <span>Firebase</span>
+            <span>Redux</span>
+          </div>
+          <div class="project-links">
+            <a href="#"><i class="fas fa-external-link-alt"></i> App Store</a>
+            <a href="#"><i class="fab fa-github"></i> Source Code</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="project-card" data-category="ai">
+        <div class="project-image">
+          <img src="https://via.placeholder.com/400x250" alt="Sentiment Analysis">
+        </div>
+        <div class="project-info">
+          <h3>Sentiment Analysis Tool</h3>
+          <p class="project-desc">NLP application that analyzes customer reviews for positive/negative sentiment.</p>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>NLTK</span>
+            <span>Flask</span>
+          </div>
+          <div class="project-links">
+            <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a href="#"><i class="fab fa-github"></i> Source Code</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="project-card" data-category="other">
+        <div class="project-image">
+          <img src="https://via.placeholder.com/400x250" alt="Library System">
+        </div>
+        <div class="project-info">
+          <h3>Library Management System</h3>
+          <p class="project-desc">Desktop application for managing library inventory and member records.</p>
+          <div class="project-tech">
+            <span>Java</span>
+            <span>MySQL</span>
+            <span>Swing</span>
+          </div>
+          <div class="project-links">
+            <a href="#"><i class="fas fa-download"></i> Download</a>
+            <a href="#"><i class="fab fa-github"></i> Source Code</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="project-card" data-category="web">
+        <div class="project-image">
+          <img src="https://via.placeholder.com/400x250" alt="Task Management">
+        </div>
+        <div class="project-info">
+          <h3>Task Management System</h3>
+          <p class="project-desc">A collaborative task management tool with real-time updates and team features.</p>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>Django</span>
+            <span>PostgreSQL</span>
+          </div>
+          <div class="project-links">
+            <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a href="#"><i class="fab fa-github"></i> Source Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-text">
+        © 2023 <span>Ravindu Yehan</span>. All rights reserved
+      </div>
+      <div class="social-links">
+        <a href="https://github.com" class="social-link" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://linkedin.com" class="social-link" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://twitter.com" class="social-link" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const projectCards = document.querySelectorAll('.project-card');
+      
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+          // Remove active class from all buttons
+          filterBtns.forEach(btn => btn.classList.remove('active'));
+          
+          // Add active class to clicked button
+          this.classList.add('active');
+          
+          const filter = this.getAttribute('data-filter');
+          
+          // Filter projects
+          projectCards.forEach(card => {
+            if (filter === 'all' || card.getAttribute('data-category') === filter) {
+              card.style.display = 'block';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>
