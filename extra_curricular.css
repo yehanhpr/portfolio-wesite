@@ -1,0 +1,122 @@
+/* Add to home.css */
+.extracurricular-section {
+  padding: 80px 10%;
+  color: var(--text-primary);
+}
+
+.extracurricular-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--text-accent);
+}
+
+.extracurricular-section h2 span, 
+.leadership-section h3 span {
+  color: var(--text-primary);
+}
+
+.section-intro {
+  font-size: 1.1rem;
+  color: #8892b0;
+  margin-bottom: 40px;
+  max-width: 800px;
+  line-height: 1.8;
+}
+
+.activity-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.category-card {
+  background: var(--bg-card);
+  padding: 30px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(100, 255, 218, 0.1);
+}
+
+.category-icon {
+  font-size: 2rem;
+  color: var(--text-accent);
+  margin-bottom: 20px;
+}
+
+.category-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: var(--text-primary);
+}
+
+.category-card ul {
+  list-style-type: none;
+}
+
+.category-card li {
+  padding: 8px 0;
+  color: #8892b0;
+  border-bottom: 1px solid rgba(100, 255, 218, 0.1);
+  font-size: 0.95rem;
+}
+
+.category-card li:last-child {
+  border-bottom: none;
+}
+
+.leadership-section {
+  margin-top: 50px;
+}
+
+.leadership-section h3 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: var(--text-accent);
+}
+
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.role-card {
+  background: var(--bg-card);
+  padding: 25px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.role-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(100, 255, 218, 0.1);
+}
+
+.role-card h4 {
+  font-size: 1.2rem;
+  color: var(--text-accent);
+  margin-bottom: 5px;
+}
+
+.org {
+  font-weight: bold;
+  color: var(--text-primary);
+  margin-bottom: 5px;
+}
+
+.duration {
+  color: var(--text-accent);
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.desc {
+  color: #8892b0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
